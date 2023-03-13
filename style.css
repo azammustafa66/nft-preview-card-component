@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    margin: 100px auto;
+    width: 50vh;
+    height: 80vh;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 80px 0;
+    padding-bottom: 1rem;
+}
+
+.equilibrium {
+    width: 100%;
+    padding: 25px;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    left: -190px;
+}
+
+.text h2{
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.text h3 {
+    padding: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.price-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: hsl(215, 32%, 27%) 0.1px solid;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    padding: 5px;
+    
+}
+
+.price p {
+    margin-left: 5px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: 5px;
+}
+
+.time p {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: wrap;
+}
+
+.creator img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    border: #fff 2px solid;
+}
+
+.creator p {
+    color:  hsl(215, 51%, 70%);
+    margin-left: 1rem;
+}
+
+.creator span {
+    color: #fff;
+}
+
+.text h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.creator span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card img:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+    opacity: 1;
+}
