@@ -30,22 +30,28 @@ body {
     padding: 25px;
 }
 
-.image-wrapper {
-    width: 100%;
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.equilibrium {
+.img-wrapper > .equilibrium {
+    display: block;
     width: 100%;
     border-radius: 1rem;
-    position: relative;
+    object-fit: cover;
+    object-position: center;
 }
 
-.eye {
+.img-wrapper > .eye {
     position: absolute;
-    opacity: 1;
+}
+
+.img-wrapper > .eye.fade {
+    opacity: 0;
 }
 
 .text h2{
@@ -124,4 +130,18 @@ body {
 .text h2:hover, .creator span:hover {
     cursor: pointer;
     color: hsl(178, 100%, 50%);
+}
+
+.img-wrapper:hover > .equilibrium {
+    cursor: pointer;
+    filter: blur(3px);
+}
+
+.img-wrapper:hover > .eye.fade {
+    opacity: 1;
+}
+
+.img-wrapper > .equilibrium,
+.img-wrapper > .eye {
+    transition: 200ms ease-in-out;
 }
