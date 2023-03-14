@@ -8,34 +8,44 @@
 
 body {
     background-color: hsl(217, 54%, 11%);
-    margin: 100px auto;
+    margin: 50px auto;
     width: 50vh;
-    height: 80vh;
+    height: 100vh;
     line-height: 1.5;
     font-family: 'Outfit', sans-serif;
 }
 
 .container {
     background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 23px 55px rgba(0, 0, 0, .5);
     display: grid;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
-    margin: 80px 0;
-    padding-bottom: 1rem;
+    margin-bottom: 50px;
+    padding: 1rem;
+}
+
+.card {
+    padding: 25px;
+}
+
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .equilibrium {
     width: 100%;
-    padding: 25px;
-    overflow: hidden;
     border-radius: 1rem;
     position: relative;
 }
 
 .eye {
     position: absolute;
-    left: -190px;
+    opacity: 1;
 }
 
 .text h2{
@@ -111,18 +121,7 @@ body {
     color: #fff;
 }
 
-.text h2:hover {
+.text h2:hover, .creator span:hover {
     cursor: pointer;
     color: hsl(178, 100%, 50%);
-}
-
-.creator span:hover {
-    cursor: pointer;
-    color: hsl(178, 100%, 50%);
-}
-
-.card img:hover {
-    cursor: pointer;
-    color: hsl(178, 100%, 50%);
-    opacity: 1;
 }
