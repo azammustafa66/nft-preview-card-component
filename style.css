@@ -26,11 +26,9 @@ body {
     padding: 1rem;
 }
 
-.card {
-    padding: 25px;
-}
 
 .img-wrapper {
+    padding: 1rem;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -144,4 +142,5 @@ body {
 .img-wrapper > .equilibrium,
 .img-wrapper > .eye {
     transition: 200ms ease-in-out;
+    color: hsl(178, 100%, 50%);
 }
